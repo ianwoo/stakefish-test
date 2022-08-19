@@ -19,7 +19,7 @@ function TableRow(props: Props) {
 
         switch (key) {
           //the pattern for this shared component is to custom render any data incoming by *property name*
-          //this keeps the core rendering very clean and simple: you just see the data, and that's it
+          //this keeps the core component very clean and simple: you just see the data, and that's it
           //while all the nitty gritty of rendering specific types of data can be stashed here
           case "logo":
             elements.push(
@@ -28,9 +28,21 @@ function TableRow(props: Props) {
               </div>
             );
             break;
+          case "url":
+            elements.push(
+              <div className="col url" key={key}>
+                <span className="browser">
+                  <a href={columnData}>{columnData}</a>
+                </span>
+                <div className="mobile">
+                  <a href={columnData}>Link</a>
+                </div>
+              </div>
+            );
+            break;
           default:
             elements.push(
-              <div className="col" key={key}>
+              <div className={"col " + key} key={key}>
                 {columnData}
               </div>
             );
