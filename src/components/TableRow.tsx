@@ -18,10 +18,13 @@ function TableRow(props: Props) {
         const columnData = data[key];
 
         switch (key) {
-          case "example-data-name":
+          //the pattern for this shared component is to custom render any data incoming by *property name*
+          //this keeps the core rendering very clean and simple: you just see the data, and that's it
+          //while all the nitty gritty of rendering specific types of data can be stashed here
+          case "logo":
             elements.push(
-              <div className="col example-data-name" key={key}>
-                {columnData}
+              <div className="col logo" key={key}>
+                <img src={columnData} alt={columnData} />
               </div>
             );
             break;

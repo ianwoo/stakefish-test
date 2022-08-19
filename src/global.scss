@@ -28,7 +28,8 @@ $text-color-darker: rgba(255, 255, 255, 0.7);
   }
   .header {
     height: 90px;
-    flex-grow: 1;
+    // flex-grow: 1;
+    width: 20%; //we know its exactly 5 columns
     display: flex;
     align-items: center;
     &.first {
@@ -67,125 +68,9 @@ $text-color-darker: rgba(255, 255, 255, 0.7);
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    // flex-grow: 1;
+    width: 20%; //we know its exactly 5 columns
     color: $text-color;
-
-    // &.portfolio-name {
-    //   font-weight: 500;
-    // }
-
-    // &.apr_markets {
-    //   display: flex;
-    //   flex-direction: column;
-
-    //   .tranche-apr {
-    //     display: flex;
-    //     font-size: 12px;
-    //     padding-top: 5px;
-    //     padding-bottom: 5px;
-    //     display: flex;
-    //     align-items: center;
-    //     & > span:nth-of-type(1) {
-    //       width: 70px;
-    //       text-align: left;
-    //     }
-    //     & > span:nth-of-type(2) {
-    //       text-align: left;
-    //     }
-    //     & > span {
-    //       min-width: 40px;
-    //       margin-left: 5px;
-    //     }
-    //     & > span:nth-of-type(3) {
-    //       display: grid;
-    //       gap: 5px;
-    //       grid-auto-flow: column;
-    //       background-color: $base-color;
-    //       border-radius: 4px;
-    //       padding: 5px;
-    //       text-align: center;
-    //       color: $highlight-color;
-    //       min-width: 60px;
-    //       margin-left: 0px;
-    //       display: flex;
-    //       justify-content: center;
-    //       align-items: center;
-    //       & > div {
-    //         display: flex;
-    //         align-items: center;
-    //       }
-    //     }
-    //     & > div > div {
-    //       display: flex;
-    //       align-items: center;
-    //     }
-    //     & svg {
-    //       margin-left: 5px;
-    //     }
-    //   }
-    // }
-
-    // &.apr_portfolio {
-    //   display: grid;
-    //   gap: 20px;
-    //   grid-auto-flow: column;
-    //   h1 {
-    //     font-weight: 500;
-    //   }
-    //   & > p {
-    //     width: 70px;
-    //   }
-    //   & > div {
-    //     display: grid;
-    //     gap: 7px;
-    //     grid-auto-flow: row;
-    //     font-size: 12px;
-    //     section {
-    //       display: flex;
-    //       align-items: center;
-    //       justify-content: space-between;
-    //       .title {
-    //         color: $text-color;
-    //       }
-    //       span {
-    //         color: $text-color;
-    //       }
-    //       p {
-    //         font-weight: 500;
-    //       }
-    //     }
-    //   }
-    // }
-
-    // &.trancheCycle {
-    //   display: grid;
-    //   gap: 5px;
-    //   grid-auto-flow: row;
-    //   justify-items: center;
-    //   span {
-    //     white-space: nowrap;
-    //   }
-    // }
-
-    // &.principal {
-    //   display: flex;
-    //   flex-direction: column;
-    //   .mc-principal {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: right;
-    //   }
-    // }
-
-    // &.yield {
-    //   display: flex;
-    //   flex-direction: column;
-    //   .mc-yield {
-    //     display: flex;
-    //     align-items: center;
-    //     justify-content: right;
-    //   }
-    // }
 
     .coin {
       height: 25px;
