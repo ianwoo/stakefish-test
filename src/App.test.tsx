@@ -1,9 +1,8 @@
-import React from "react";
-import { render, screen } from "@testing-library/react";
-import App from "./StakefishTest";
+import { render } from "@testing-library/react";
+import StakefishTest from "./StakefishTest";
 
-test("renders learn react link", () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("renders stakefish test", () => {
+  render(<StakefishTest />);
+  // const linkElement = screen.getByText(/learn react/i);
+  // expect(linkElement).toBeInTheDocument();
 });
