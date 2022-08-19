@@ -1,3 +1,5 @@
+//most of this css was directly copy pasted from frontend-reboot, as I had already pretty much written a custom table component
+//in frontend-reboot that can handle the task given, so much of it is unused
 $base-color: #ffffff;
 $base-color-dark: #04050e;
 $header-color-dark: #030c1b;
@@ -20,6 +22,7 @@ $text-color-darker: rgba(255, 255, 255, 0.7);
   flex: 1;
   margin-bottom: 32px;
 
+  //I chose 768px as the only breakpoint as devices that are wider that 768px generally can handle 'browser like' rendering relatively well
   @media screen and (max-width: 768px) {
     padding: 0;
     width: 100%;
@@ -117,7 +120,7 @@ $text-color-darker: rgba(255, 255, 255, 0.7);
 }
 
 //this scss is unused, but is stolen from frontend-reboot
-//leaving it here because it can very well contribute to expansion of this codebase for the future, even though I won't
+//leaving it here because it can very well contribute to expansion of this codebase (adding dark mode) for the future
 @mixin dark-table() {
   background-color: $base-color-dark;
   .header-row {

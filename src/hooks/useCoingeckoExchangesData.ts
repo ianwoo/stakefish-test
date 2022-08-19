@@ -35,6 +35,8 @@ export const useCoingeckoExchangesData = () => {
       setExchanges(_exchanges);
     };
     fetchExchanges();
+    //currently the hook only fetches the data once on mount, but I could add a refresh timeout here and stick it in the dependency array
+    //to control exactly when I want the data to re-fetch
   }, []);
 
   return exchanges;
