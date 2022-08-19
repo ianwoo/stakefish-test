@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import ExchangePage from "./components/ExchangePage";
 import HomePage from "./components/HomePage";
 import "./global.scss";
 import { Exchange, useCoingeckoExchangesData } from "./hooks/useCoingeckoExchangesData";
@@ -15,6 +16,9 @@ function StakefishTest() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage coingeckoExchangesData={coingeckoExchangesData} />} />
+        {coingeckoExchangesData.map((ex: Exchange, i: number) => (
+          <Route path={"/" + ex.trust_score_rank} element={<ExchangePage exchange={ex} />} />
+        ))}
       </Routes>
     </BrowserRouter>
   );

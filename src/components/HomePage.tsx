@@ -29,7 +29,7 @@ function HomePage(props: Props) {
           <span>Trust Rank</span>
         </div>
       </div>
-      {coingeckoExchangesData.map((ex: any, i: number) => (
+      {coingeckoExchangesData.map((ex: Exchange, i: number) => (
         <TableRow
           key={i}
           data={{

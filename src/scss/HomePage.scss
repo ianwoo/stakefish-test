@@ -2,6 +2,9 @@
 
 //core css
 .stakefish-test {
+  //it would probably have been better to isolate this css instead of importing it from global.scss,
+  //but TableRow was reused in multiple routes from the codebase I ripped TableRow from
+  //so because I'm lazy I'm just going to keep it as an import
   .header-row {
     @include header-row;
   }

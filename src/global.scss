@@ -116,6 +116,8 @@ $text-color-darker: rgba(255, 255, 255, 0.7);
   }
 }
 
+//this scss is unused, but is stolen from frontend-reboot
+//leaving it here because it can very well contribute to expansion of this codebase for the future, even though I won't
 @mixin dark-table() {
   background-color: $base-color-dark;
   .header-row {
@@ -130,18 +132,6 @@ $text-color-darker: rgba(255, 255, 255, 0.7);
     .table-row {
       background-color: $layer-color-dark-2;
       color: $text-color-dark;
-    }
-  }
-}
-
-//core css
-.stakefish-test {
-  .header-row {
-    @include header-row;
-  }
-  .row-wrapper {
-    .table-row {
-      @include table-row;
     }
   }
 }
