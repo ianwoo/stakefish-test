@@ -30,11 +30,11 @@ export const useCoingeckoExchangesData = () => {
   const [exchanges, setExchanges] = useState<Exchange[]>([]);
 
   useEffect(() => {
-    const fetchBalance = async () => {
+    const fetchExchanges = async () => {
       const _exchanges = await getCoingeckoExchangesData();
       setExchanges(_exchanges);
     };
-    fetchBalance();
+    fetchExchanges();
   }, []);
 
   return exchanges;
