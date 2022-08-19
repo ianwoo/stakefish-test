@@ -16,6 +16,7 @@ function StakefishTest() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage coingeckoExchangesData={coingeckoExchangesData} />} />
+        {/* the data is already coming in trust rank order, so might as well just map it to use trust rank for route path*/}
         {coingeckoExchangesData.map((ex: Exchange, i: number) => (
           <Route path={"/" + ex.trust_score_rank} element={<ExchangePage exchange={ex} />} />
         ))}
