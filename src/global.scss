@@ -242,3 +242,15 @@ $text-color-darker: rgba(255, 255, 255, 0.7);
     }
   }
 }
+
+//core css
+.stakefish-test {
+  .header-row {
+    @include header-row;
+  }
+  .row-wrapper {
+    .table-row {
+      @include table-row;
+    }
+  }
+}
