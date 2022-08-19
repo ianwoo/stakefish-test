@@ -1,0 +1,22 @@
+.exchange-page {
+  .back-button-wrapper {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background: #fff;
+    padding: 20px;
+  }
+  .content {
+    padding-left: 69px;
+    padding-right: 24px;
+    margin-left: 69px;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 24px;
+      margin-left: 0;
+      padding-top: 69px;
+    }
+  }
+}
