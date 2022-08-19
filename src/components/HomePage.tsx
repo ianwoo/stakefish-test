@@ -1,5 +1,6 @@
 import { Exchange } from "../hooks/useCoingeckoExchangesData";
 import TableRow from "./TableRow";
+import "../scss/HomePage.scss";
 
 type Props = {
   coingeckoExchangesData: Exchange[];

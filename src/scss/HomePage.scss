@@ -1,0 +1,13 @@
+@import "../global.scss";
+
+//core css
+.stakefish-test {
+  .header-row {
+    @include header-row;
+  }
+  .row-wrapper {
+    .table-row {
+      @include table-row;
+    }
+  }
+}
