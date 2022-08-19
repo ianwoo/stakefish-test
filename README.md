@@ -12,6 +12,8 @@ When the user clicks on an exchange, show its details on a separate page. Includ
 
 The only 3rd party dependency library is ky, simply to avoid the annoying fetch boilerplate (and react router I guess, but does that really count?)
 
+EDIT: And a little library called "react-twitter-embed" to embed the exchange's twitter feed
+
 Testing for responsive design was done with Chrome developer tools, checking the look of the page on the list of default viewports (iPhone SE, iPhone XR, etc...)
 
 ## Script:
